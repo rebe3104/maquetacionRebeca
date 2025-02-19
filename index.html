@@ -6,7 +6,7 @@
   <title>Blog de Beca</title>
   <style>
     /* Aqui va el código CSS */
-	  *{
+	  .{
 		  box-sizing: border-box;
 	  }
 	  body{
@@ -31,19 +31,13 @@
 	  main {
 		  background-color: white;
 		  padding: 30px;
-		  position: relative;
-	  }
-	  section {
-		  width: 70%;
+		  float: right;
 	  }
 	  aside {
-		  wigth: 30%;
-		  position: absolute;
-		  right: 0px;
-		  top: 0px;
 		  background-color: #A1C1E5;
 		  padding: 30px;
 		  color: #084287;
+		  transition: all 2s;
 	  }
 	  article{
 		  background-color: #87BAF7;
@@ -54,21 +48,56 @@
 		  background-color: #084287;
 		  padding: 30px;
 		  height: 100px;
-		  position: fixed;
-		  bottom: 0;
 		  width: 100%;
+		  clear: both;
+	  }
+	  /* Versión tablet */
+	  @media screen and (min-width: 600px) {
+		  section{
+			  width: 70%;
+			  float: left;
+		  }
+		  aside {
+		  wigth: 30%;
+		  float: right;
+		  color: #084287;
+		  }
+	  }
+	  /* Versión laptop */
+	   @media screen and (min-width: 1024px) {
+		  section{
+			  width: 70%;
+			  float: left;
+		  }
+		  aside {
+		  wigth: 30%;
+		  float: right;
+		  color: #084287;
+		  }
+	  }
+	   /* Versión Destopk */
+	   @media screen and (min-width: 1440px) {
+		  section{
+			  width: 70%;
+			  float: left;
+		  }
+		  aside {
+		  wigth: 30%;
+		  float: right;
+		  color: #084287;
+		  }
 	  }
   </style>
 </head>
 <body>
 
   <!-- Encabezado con el título del blog -->
-  <header>
+<header>
     <h1>Blog de Beca</h1>
   </header>
 
   <!-- Menú de navegación principal -->
-  <nav>
+<nav>
     <ul>
       <li><a href="#">Inicio</a></li>
       <li><a href="#">Acerca de</a></li>
@@ -93,7 +122,7 @@
           Este es un ejemplo de contenido para tu primer artículo. 
           Puedes añadir más párrafos, imágenes, etc.
         </p>
-      </article>
+    </article>
   
       <article>
         <h2>Título del Artículo 2</h2>
